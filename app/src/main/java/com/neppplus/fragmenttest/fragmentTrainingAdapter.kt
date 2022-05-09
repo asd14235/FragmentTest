@@ -23,4 +23,17 @@ class fragmentTrainingAdapter (fm : FragmentManager) : FragmentPagerAdapter(fm) 
         TODO("Not yet implemented")
     }
 
+    override fun getPageTitle(position: Int): CharSequence? {
+
+        return when (position) {
+
+            0 -> "이름"
+            1 -> "생년"
+            else -> "인사"
+
+        }
+
+    }
+
 }
+
